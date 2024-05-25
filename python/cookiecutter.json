@@ -1,0 +1,11 @@
+{
+  "project_name": "ck-poetry-py-project",
+  "project_slug": "{{cookiecutter.project_name|lower|replace(' ', '_')|replace('-', '_')}}",
+  "__project_name_kebab_case": "{{ cookiecutter.project_name|slugify }}",
+  "__project_name_snake_case": "{{ cookiecutter.project_name|slugify(separator='_') }}",
+  "project_description": "A Python project that rocks.",
+  "author_name": "nkatshiba",
+  "author_email": "nkatshiba@proton.me",
+  "project_url": "https://repo.vimkat.com/{{ cookiecutter.__project_name_kebab_case }}",
+  "version": "0.1.0"
+}
